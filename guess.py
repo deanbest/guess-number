@@ -1,6 +1,10 @@
 import random
+start = input('請決定隨機數字範圍開始值:')
+end = input('請決定隨機數字範圍開始值:')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100) # 注意空格
+r = random.randint(start, end) # 注意空格
 count = 0 # 放到while true裡的話, 變成每猜一次, 就把計數歸0, 把要變化的放在迴圈內
 while True:
 	count = count + 1 # 快寫法: count += 1
